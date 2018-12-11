@@ -18,10 +18,10 @@
        <h4>Computer</h4>
        <select class="form-control" id="computers">
          <option value="0">No Computer</option>
-         <option value="1135.00">Lenovo ThinkPad T460; 2.3GHz Corei5; 14in; 3.9lbs</option>
-         <option value="1320.00">Lenovo ThinkPad T470; 2.4GHz Corei5; 14in; 3.6lbs</option>
-         <option value="1500.00">Lenovo ThinkPad T470s; 2.4GHz Corei5; 14in; 2.9lbs</option>
-         <option value="2000.00">Lenovo ThinkPad X1 Carbon; 2.6GHz Corei7; 14in; 2.6lbs</option>
+         <option value="879.00">Lenovo ThinkPad E580; 2.5GHz Corei5; 15.6in; 4.7lbs</option>
+         <option value="980.00">Lenovo ThinkPad T480; 2.5GHz Corei5; 14in; 3.6lbs</option>
+         <option value="1500.00">Lenovo ThinkPad T480s; 1.7GHz Corei5; 14in; 2.9lbs</option>
+         <option value="2000.00">Lenovo ThinkPad X1 Carbon; 2.8GHz Corei7; 14in; 2.5lbs</option>
        </select>
      </div>
      <div class="col-sm-1" id="quote-calc">
@@ -56,6 +56,16 @@
                <th>Annual Help Desk Support</th>
                <td class="yearlyHelpDesk" id="yearlyHelpDesk">400</td>
              </tr>
+						 <tr>
+							 <th>Required Tech Support Utilities
+									 <span class="tooltiptext">
+										 <ul>Pulsway - $22.20/person</ul>
+										 <ul>Automox - $24.00/person</ul>
+										 <ul>Cylance - $57.60/person</ul>
+									 </span>
+							</th>
+							<td class="techUtilities" id="techUtilities"></td>
+						 </tr>
              <tr>
                <th>Grant Total</th>
                <td class="grandTotal" id="grandTotal">0</td>
@@ -73,11 +83,6 @@
             <div class="extra-name">Salesforce</div>
       			<div class="extra-price">$99</div>
             <img src="images/salesforce.png">
-      		</div>
-      		<div class="extra-container" id="serviceCloud-col">
-            <div class="extra-name">Service Cloud</div>
-      			<div class="extra-price">$29</div>
-            <img src="images/servicecloud.png">
       		</div>
       		<div class="extra-container" id="monitor">
             <div class="extra-name">Monitor</div>
@@ -104,11 +109,6 @@
             <div class="extra-price">$245 (first year)</div>
             <img src="images/adobecc.png">
           </div>
-          <div class="extra-container" id="intranet">
-            <div class="extra-name">Intranet</div>
-            <div class="extra-price">$36 (first year)</div>
-            <img src="images/papyrs.png">
-          </div>
           <div class="extra-container" id="deskPhone">
             <div class="extra-name">Desk Phone</div>
             <div class="extra-price">$80</div>
@@ -119,31 +119,71 @@
             <div class="extra-price">$100</div>
             <img src="images/headset.png">
           </div>
-          <div class="extra-container" id="okta">
-            <div class="extra-name">Okta Single Sign On</div>
-            <div class="extra-price">$22 (first year)</div>
-            <img src="images/okta.png">
+          <div class="extra-container" id="jumpcloud">
+            <div class="extra-name">JumpCloud Single Sign On</div>
+            <div class="extra-price">$40 (first year)</div>
+            <img src="images/JumpCloud.png">
           </div>
           <div class="extra-container" id="duo">
             <div class="extra-name">Duo 2 Factor Authentication</div>
             <div class="extra-price">$25 (first year)</div>
             <img src="images/duo.png">
           </div>
-          <div class="extra-container" id="five9">
-            <div class="extra-name">Five9</div>
-            <div class="extra-price">$1200 (first year)</div>
-            <img src="images/five9.png">
+					<div class="extra-container" id="dongle">
+            <div class="extra-name">Dongle</div>
+            <div class="extra-price">$15</div>
+            <img src="images/dongle.png">
           </div>
-          <div class="extra-container" id="cellPhone">
-            <div class="extra-name">Cell Phone</div>
-            <div class="extra-price">$600</div>
-            <img src="images/cellphone.png">
-          </div>
-          <div class="extra-container" id="cellPlan">
-            <div class="extra-name">Cell Phone Plan</div>
-            <div class="extra-price">$1200 (first year)</div>
+					<div class="extra-container" id="printer">
+						<div class="extra-name">Printer</div>
+						<div class="extra-price">$200</div>
+						<img src="images/printer.png">
+					</div>
+					<div class="extra-container" id="dockingStation">
+						<div class="extra-name">Docking Station</div>
+						<div class="extra-price">$200</div>
+						<img src="images/dockingStation.png">
+					</div>
+					<div class="extra-container" id="monitorMounts">
+						<div class="extra-name">Monitor Mounts</div>
+						<div class="extra-price">$75</div>
+						<img src="images/monitorMounts.png">
+					</div>
+					<div class="extra-container" id="hotspot">
+						<div class="extra-name">Mobile Hotspot</div>
+						<div class="extra-price">$99</div>
+						<img src="images/hotspot.png">
+					</div>
+					<div class="extra-container" id="dataPlan">
+            <div class="extra-name">Hotspot Data Plan</div>
+            <div class="extra-price">$540 (first year)</div>
             <img src="images/cellplan.png">
           </div>
+					<div class="extra-container" id="fuze">
+						<div class="extra-name">Fuze</div>
+						<div class="extra-price">$192 (first year)</div>
+						<img src="images/fuze.png">
+					</div>
+					<div class="extra-container" id="zoom">
+						<div class="extra-name">Zoom</div>
+						<div class="extra-price">$112 (first year)</div>
+						<img src="images/zoom.png">
+					</div>
+					<div class="extra-container" id="dropbox">
+						<div class="extra-name">Dropbox</div>
+						<div class="extra-price">$168 (first year)</div>
+						<img src="images/dropbox.png">
+					</div>
+					<div class="extra-container" id="slack">
+						<div class="extra-name">Slack</div>
+						<div class="extra-price">$27 (first year)</div>
+						<img src="images/slack.png">
+					</div>
+					<div class="extra-container" id="clickUp">
+						<div class="extra-name">ClickUp Project Management</div>
+						<div class="extra-price">$60 (first year)</div>
+						<img src="images/clickup.png">
+					</div>
         </div>
       </div>
     </div>

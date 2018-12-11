@@ -103,3 +103,9 @@ h3 { text-align: center; }
   color: white; }
 .material-icons.md-light.md-inactive {
   color: rgba(255, 255, 255, 0.3); }
+
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
